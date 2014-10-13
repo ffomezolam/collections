@@ -1,0 +1,3 @@
+[submodule "closecoll"]
+	path = closecoll
+	url = git@github.com:ffomezolam/closecoll.git
