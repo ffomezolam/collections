@@ -26,13 +26,20 @@ function verify(path) {
         add: false,
         remove: false
     };
+    var length = 3;
 
-    for(var p in o) {
+    for(var p in o.prototype) {
         if(p in required) required[p] = true;
     }
 
+    var t = length;
     for(var e in required) {
         var v = required[e];
-        if(!v) console.error('    missing ' + e)
+        if(!v) {
+            console.error('    missing ' + e);
+            t--;
+        }
     }
+
+    if(t == length) console.log('    OK');
 }
