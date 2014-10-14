@@ -1,3 +1,6 @@
 [submodule "closecoll"]
 	path = closecoll
 	url = git@github.com:ffomezolam/closecoll.git
+[submodule "roulette"]
+	path = roulette
+	url = git@github.com:ffomezolam/roulette.git
